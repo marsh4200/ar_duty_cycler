@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 256" width="820" height="256">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.55" stop-color="#0a84c8"/>
+      <stop offset="1" stop-color="#055f93"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(0,0)">
+    <rect x="6" y="6" width="244" height="244" rx="58" fill="url(#bg)"/>
+    <rect x="6" y="6" width="244" height="244" rx="58" fill="url(#sheen)"/>
+    
+      <circle cx="128.0" cy="128.0" r="76" fill="none" stroke="#0b4f7a" stroke-width="27" opacity="0.25"/>
+      <g fill="none" stroke="#ffffff" stroke-width="17" stroke-linecap="round">
+        <path d="M 61.24 101.03 A 72.00 72.00 0 0 1 194.76 101.03"/>
+        <path d="M 194.76 154.97 A 72.00 72.00 0 0 1 61.24 154.97"/>
+      </g>
+      <g fill="#ffffff" stroke="none">
+        <path d="M 202.62 120.50 L 179.57 107.16 L 209.94 94.89 Z"/>
+        <path d="M 53.38 135.50 L 76.43 148.84 L 46.06 161.11 Z"/>
+      </g>
+      <g fill="none" stroke="#ffb703" stroke-width="15" stroke-linecap="round">
+        <path d="M 134.47 103.85 A 25.00 25.00 0 1 1 121.53 103.85"/>
+        <path d="M 128.00 92.00 L 128.00 124.00"/>
+      </g>
+    
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#0f2733">
+    <text x="290" y="120" font-size="62" font-weight="800" letter-spacing="-1">AR Duty Cycler</text>
+    <text x="292" y="172" font-size="30" font-weight="500" fill="#3b6b86" letter-spacing="3">ARSMARTHOME</text>
+  </g>
+</svg>

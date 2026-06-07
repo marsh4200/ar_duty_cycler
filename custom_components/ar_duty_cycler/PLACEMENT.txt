@@ -1,0 +1,31 @@
+AR Duty Cycler — brand assets
+=============================
+
+OPTION A (easiest, Home Assistant 2026.3+):
+  Drop the brand/ folder straight into the integration:
+
+    custom_components/ar_duty_cycler/
+    ├── __init__.py
+    ├── manifest.json
+    └── brand/
+        ├── icon.png        (256x256)
+        ├── icon@2x.png     (512x512)
+        ├── logo.png        (820x256)
+        └── logo@2x.png     (1640x512)
+
+  Local images take priority over the brands CDN. No config needed.
+  (Optional: add dark_icon.png / dark_logo.png for dark themes.)
+
+OPTION B (brands repo PR, works on any version):
+  Fork github.com/home-assistant/brands and add:
+
+    custom_integrations/ar_duty_cycler/
+    ├── icon.png
+    ├── icon@2x.png
+    ├── logo.png
+    └── logo@2x.png
+
+  Open a PR. Note: symlinks are NOT allowed in custom_integrations/.
+
+source/ holds the editable SVGs and an alternate round (transparent-corner)
+mark if you prefer that over the rounded-square tile.
