@@ -1,0 +1,67 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "AR Duty Cycler",
+        "description": "Cycle an entity on/off on repeat inside a daily time window.",
+        "data": {
+          "name": "Name",
+          "target_entity": "Entity to cycle",
+          "on_duration": "ON duration (minutes)",
+          "off_duration": "OFF duration (minutes)",
+          "window_start": "Window start",
+          "window_end": "Window end",
+          "park_state": "State when window closes",
+          "start_phase": "Phase at window start"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "AR Duty Cycler",
+        "data": {
+          "name": "Name",
+          "target_entity": "Entity to cycle"
+        }
+      }
+    }
+  },
+  "selector": {
+    "state_choice": {
+      "options": {
+        "on": "On",
+        "off": "Off"
+      }
+    }
+  },
+  "entity": {
+    "switch": {
+      "enable": { "name": "Cycle" }
+    },
+    "number": {
+      "on_duration": { "name": "ON duration" },
+      "off_duration": { "name": "OFF duration" }
+    },
+    "time": {
+      "window_start": { "name": "Window start" },
+      "window_end": { "name": "Window end" }
+    },
+    "select": {
+      "park_state": { "name": "State when closed" },
+      "start_phase": { "name": "Start phase" }
+    },
+    "sensor": {
+      "status": {
+        "name": "Status",
+        "state": {
+          "idle": "Idle",
+          "waiting": "Waiting for window",
+          "running_on": "Running \u2013 ON",
+          "running_off": "Running \u2013 OFF"
+        }
+      }
+    }
+  }
+}
