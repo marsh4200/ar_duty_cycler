@@ -106,7 +106,7 @@ class ARDutyCyclerConfigFlow(ConfigFlow, domain=DOMAIN):
     @staticmethod
     @callback
     def async_get_options_flow(config_entry: ConfigEntry) -> OptionsFlow:
-        return ARDutyCyclerOptionsFlow(config_entry)
+        return ARDutyCyclerOptionsFlow()
 
 
 class ARDutyCyclerOptionsFlow(OptionsFlow):
@@ -115,9 +115,6 @@ class ARDutyCyclerOptionsFlow(OptionsFlow):
     Durations, window times, park and start phase are adjusted live via the
     device's own entities, so they are intentionally not re-edited here.
     """
-
-    def __init__(self, config_entry: ConfigEntry) -> None:
-        self.config_entry = config_entry
 
     async def async_step_init(
         self, user_input: dict[str, Any] | None = None
